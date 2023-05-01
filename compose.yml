@@ -25,6 +25,7 @@ services:
     command: sh -c "cd /var/www/html && npm run dev"
   phppgadmin:
     image: bitnami/phppgadmin:latest
+    platform: linux/amd64
     environment:
       DATABASE_ENABLE_EXTRA_LOGIN_SECURITY: "yes"
       PHPPGADMIN_ALLOW_REMOTE_CONNECTIONS: "yes"
